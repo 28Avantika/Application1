@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rule Engine</h1>
+
+        <!-- Rule Creation -->
+        <div class="section">
+            <h2>Create Rule</h2>
+            <textarea id="rule-input" placeholder="Enter a rule (e.g., age > 18)"></textarea>
+            <button id="create-rule-btn">Create Rule</button>
+            <pre id="rule-output"></pre>
+        </div>
+
+        <!-- Combine Rules -->
+        <div class="section">
+            <h2>Combine Rules</h2>
+            <textarea id="combine-rules-input" placeholder="Enter multiple rules (comma-separated)"></textarea>
+            <button id="combine-rules-btn">Combine Rules</button>
+            <pre id="combined-output"></pre>
+        </div>
+
+        <!-- Evaluate Rule -->
+
+        <div class="section" style="display: flex;flex-direction: column;">
+            <div style="display: flex;justify-content: space-between;">
+                <div style="width: 45%;float: left;">
+                    <h2>Evaluate Rule</h2>
+                    <textarea id="evaluate-input-rule" placeholder="Enter user data (JSON format)"></textarea>
+                </div>
+                <div style="width: 45%;float: right;">
+                    <h2>JSON Data</h2>
+                    <textarea id="evaluate-input-json" placeholder="Enter user data (JSON format)"></textarea>
+                </div>
+            </div>
+            <pre id="evaluate-output"></pre>
+
+            <button id="evaluate-btn">Evaluate</button>
+        </div>
+
+
+    </div>
+
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>
